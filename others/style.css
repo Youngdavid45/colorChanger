@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background {
+    background-image: url(/others/room/mbr-4-900x600.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    height: 100vh;
+    filter: blur(20px);
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+.container h3 {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2px;
+    color: gray;
+}
+
+.container .form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container .form label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container .form input {
+    margin-bottom: 20px;
+    padding: 7px 6px;
+    width: 100%;
+}
+
+input:focus {
+    border: 1px solid orangered;
+    outline: orangered;
+}
+
+.container .form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
